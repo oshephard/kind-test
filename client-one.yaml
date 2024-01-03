@@ -1,0 +1,9 @@
+apiVersion: venue.sh/v1alpha1
+kind: VenueSh
+metadata:
+  name: client-one
+  description: VenueSh for client-one
+spec:
+  owner: devops
+  type: stack
+  system: portal
