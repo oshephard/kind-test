@@ -1,0 +1,33 @@
+apiVersion: venue.sh/v1alpha1
+kind: StageTemplate
+metadata:
+  name: gitlab
+  description: This is the stage for GitLab
+  annotations: {}
+spec:
+  type: stage
+  lifecycle: production
+  owner: devops
+  system: venuesh
+  id: gitlab
+  version: 1.0.0
+  tags: devops,mobile
+  global:
+    fields:
+      - id: awsAccessKeyId
+        name: AWS Access Key ID
+        required: true
+        type: string
+        defaultValue: test 1
+        secret: true
+        replaceId: aws.access.key
+        description: zyc
+  tools:
+    - aaa
+    - bbb
+  readme: |
+    # GitLab Stage
+    ...
+  releaseNotes: |
+    # RELEASE NOTES
+    ...
