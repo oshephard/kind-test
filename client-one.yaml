@@ -1,5 +1,5 @@
 apiVersion: venue.sh/v1alpha1
-kind: Component
+kind: VenueSh
 metadata:
   name: client-one
   description: VenueSh for client-one
